@@ -10,5 +10,5 @@ publish:
     repo: firecyberice/rpi-dockvpn
     file: Dockerfile.arm
     tag:
-      - $$DRONE_BRANCH
-      - $$DRONE_BUILD_NUMBER
+      - $$BRANCH
+      - $$BUILD_NUMBER
