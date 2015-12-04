@@ -1,4 +1,4 @@
-#debug: true
+debug: true
 
 publish:
   docker:
@@ -9,6 +9,3 @@ publish:
     email: $$DOCKER_EMAIL
     repo: firecyberice/rpi-dockvpn
     file: Dockerfile.arm
-    tag:
-      - $$BRANCH
-      - $$BUILD_NUMBER
