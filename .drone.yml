@@ -9,4 +9,6 @@ publish:
     email: $$DOCKER_EMAIL
     repo: firecyberice/rpi-dockvpn
     file: Dockerfile.arm
-    tag: "$$DRONE_BRANCH-$$DRONE_BUILD_NUMBER"
+    tag:
+      - $$DRONE_BRANCH
+      - $$DRONE_BUILD_NUMBER
