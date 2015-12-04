@@ -1,0 +1,12 @@
+#debug: true
+
+publish:
+  docker:
+#    environment:
+#      - DOCKER_LAUNCH_DEBUG=true
+    username: $$DOCKER_USER
+    password: $$DOCKER_PASS
+    email: $$DOCKER_EMAIL
+    repo: firecyberice/rpi-dockvpn
+    file: Dockerfile.arm
+    tag: "$$DRONE_BRANCH-$$DRONE_BUILD_NUMBER"
