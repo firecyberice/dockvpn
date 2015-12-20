@@ -7,5 +7,5 @@ publish:
     username: $$DOCKER_USER
     password: $$DOCKER_PASS
     email: $$DOCKER_EMAIL
-    repo: firecyberice/rpi-dockvpn
+    repo: firecyberice/armhf-dockvpn
     file: Dockerfile.arm
