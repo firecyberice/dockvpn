@@ -3,14 +3,14 @@ vpnserver:
   dockerfile: Dockerfile.arm
   privileged: true
   ports:
-    - 1194:1194/udp
-    - 443:443/tcp
+    - "1194:1194/udp"
+    - "443:443/tcp"
     
 serve:
   build: .
   dockerfile: Dockerfile.arm  
   ports:
-    - 8080:8080
+    - "8080:8080"
   volumes_from:
     - vpnserver
   command: serveconfig
