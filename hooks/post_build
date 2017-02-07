@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "==> install manifest-tool"
+URL=https://github.com/estesp/manifest-tool/releases/download/v0.3.0/manifest-tool-amd64-linux
+
+curl -sLo ./manifest-tool ${URL}
+chmod +x ./manifest-tool
+
+
+echo "==> push multiarch"
+./manifest-tool push from-spec manifest.yml

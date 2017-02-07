@@ -1,0 +1,10 @@
+image: firecyberice/dockvpn:latest
+manifests:
+  - image: firecyberice/dockvpn:amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: firecyberice/dockvpn:arm
+    platform:
+      architecture: arm
+      os: linux
