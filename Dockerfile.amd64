@@ -3,6 +3,7 @@ FROM alpine:3.5
 RUN apk --update --no-cache add \
     curl \
     iptables \
+    openssl \
     openvpn \
     socat
 
