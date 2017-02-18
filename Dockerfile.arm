@@ -3,6 +3,7 @@ FROM hypriot/rpi-alpine:3.4
 RUN apk --update --no-cache add \
     curl \
     iptables \
+    openssl \
     openvpn \
     socat
 
